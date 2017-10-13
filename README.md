@@ -3,6 +3,13 @@
 <h1 align="center">React Native Flexbox</h1>
 <div align="center">Playing around with flexbox in react-native </div>
 
+<br />
+<br />
+
+<div align="center">
+    <img src="images/screenshot.png" alt="iPhone Screenshot" height="400px" />
+</div>
+
 
 ## Getting Started
 
