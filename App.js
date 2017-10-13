@@ -1,13 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, AppRegistry } from 'react-native';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <View style={styles.box}></View>
+        <View style={[styles.box, {flex: 2, alignSelf: 'flex-start'}]}></View>
+        <View style={styles.box}></View>
       </View>
     );
   }
@@ -16,8 +16,14 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    flexDirection: 'row',
     justifyContent: 'center',
+    alignItems: 'center',
   },
+  box: {
+    height: 50,
+    width: 50,
+    backgroundColor: '#E76E63',
+    margin: 10
+  }
 });
